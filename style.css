@@ -29,6 +29,7 @@ body {
 
 .formButtonContainer button:hover {
   filter: brightness(120%);
+  cursor: pointer;
 }
 
 .formButtonContainer button:active {
@@ -65,8 +66,12 @@ body {
 }
 
 #showPassword {
-  background-color: white;
+  background-color: transparent;
   border: none;
+}
+
+#showPassword:hover {
+  cursor: pointer;
 }
 
 .inputContainer {
