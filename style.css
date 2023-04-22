@@ -1,0 +1,83 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  height: 100vh;
+}
+
+.formButtonContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.formButtonContainer button {
+  color: white;
+  background-color: rgb(9, 68, 147);
+  border: none;
+  height: 50px;
+  width: 100%;
+  border-radius: 5px;
+  margin-top: 20px;
+  outline: none;
+  transition: outline 0.1s linear;
+}
+
+.formButtonContainer button:hover {
+  filter: brightness(120%);
+}
+
+.formButtonContainer button:active {
+  outline: rgb(65, 25, 127) solid 3px;
+}
+
+.formContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+#formMainLogin {
+  display: flex;
+  flex-direction: column;
+  gap: 10px
+}
+
+#formMainLogin label {
+  color: rgb(62, 72, 84);
+}
+
+#formMainLogin input {
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
+  /* border: 1px solid rgb(189, 187, 187); */
+}
+
+#formMainLogin input:focus {
+  outline: none;
+}
+
+#showPassword {
+  background-color: white;
+  border: none;
+}
+
+.inputContainer {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid rgb(189, 187, 187);
+}
+
+#buttonShowPasswordContainer {
+  display: flex;
+  align-items: center;
+}
