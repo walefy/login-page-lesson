@@ -6,7 +6,7 @@ const changeIconShowPasswordBtn = () => {
   const showPasswordIcon = document.querySelector('#showPassword img');
 
   if (showPasswordIcon.src.includes(openEye)) {
-    showPasswordIcon.src = `/${closeEye}`;
+    showPasswordIcon.src = closeEye;
     return;
   }
 
