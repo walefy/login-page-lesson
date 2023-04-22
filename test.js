@@ -46,7 +46,12 @@ const addEventOnSubmit = () => {
     const name = document.querySelector('#inputNameFormMainLogin').value;
     const password = document.querySelector('#inputPasswordFormMainLogin').value;
 
-    saveUserLogin(name, password);
+    if (name.trim() && password.trim()) {
+      saveUserLogin(name, password);
+      return;
+    }
+
+    window.alert('falta adicionar o nome ou a senha');
   });
 };
 
